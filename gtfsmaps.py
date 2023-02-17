@@ -7,8 +7,8 @@ from polyline import encode
 from natsort import natsorted
 from zipfile import ZipFile
 
-GOOGLE_API_KEY = os.env['GOOGLE_API_KEY']
-SF_511_API_KEY = os.env['SF_511_API_KEY']
+GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
+SF_511_API_KEY = os.environ['SF_511_API_KEY']
 GTFS_URL = 'http://api.511.org/transit/datafeeds?&operator_id=SF&api_key=' + SF_511_API_KEY
 
 if len(sys.argv) != 2:
